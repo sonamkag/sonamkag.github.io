@@ -1,0 +1,1 @@
+This repository is meant for a portfolio project to display my skills and knowledge in a better way.
