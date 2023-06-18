@@ -1,12 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sonam Kag | Computer Science</title>
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/52ca8cc6e4b0cd506530c291/1389006107647-B7X9IS24VR1JB8AA0URI/favicon.ico" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Gluten:wght@200&family=Merienda:wght@300&family=Open+Sans&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: #9e9e9e22;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 9px;
+
+        }
+
+        .left {
+            font-family: Shantell Sans;
+            font-size: 2rem;
+        }
+
+        .right {
+            font-family: Merienda;
+            font-size: 1rem;
+        }
+
+        /* .h1{
+            font-family: Dancing Script;
+            font-size: 1rem; 
+        }
+
+        .h2{
+            font-family: Gluten;
+            font-size: 1rem; 
+        }
+
+        .h3{
+            font-family: Merienda;
+            font-size: 1rem;
+            
+        }
+
+        .h4{
+            font-family: Comforter;
+            font-size: 1rem; 
+        }
+
+        .h5{
+            font-family: Shantell Sans;
+            font-size: 1rem; 
+        } */
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+        }
+
+        .leftSection {
+            background-color: transparent;
+        }
+
+        .rightSection {
+            /* background-color: red; */
+            font-family: Shantell Sans;
+            font-size: 1.5rem;
+            width: 50%;
+        }
+
+        .leftSection img {
+            height: 480px;
+            /* width: 400px; */
+            border-radius: 50%;
+        }
+
+        .roundedButton {
+            font-family: Open Sans;
+            border-radius: 50%;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        
+
+        .roundlink{
+            position: relative;
+      	    width: 100px;
+      	    height: 100px;
+		    border-radius: 50%;
+            border: 1px solid;
+            display: inline-block;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button1 {
+            background-color: #bada55;
+        }
+
+        .button2 {
+            background-color: #eea302;
+        }
+
+        .button3 {
+            background-color: #80d8da;
+        }
+
+        .button4 {
+            background-color: #c7c7c7;
+        }
+
+        .spanclass{
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: black;
+            margin: 0;
+  		    position: absolute;
+  		    top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .fa-youtube-play{
+            color: #e84118;
+        }
+
+        .fa-github{
+            color: black;
+        }
+
+        .fa-linkedin{
+            color: #007bb5;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Hello World!</h2>
+    <header>
+        <nav>
+            <div class="left"> Sonam Kag</div>
+            <div class="right">
+                <ul>
+                    <li>Projects</li>
+                    <li>About</li>
+                    <li>Resume</li>
+                    <li>Personal</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <div class="h1">Sonam Kag</div>
+        <div class="h2">Sonam Kag</div>
+        <div class="h3">Sonam Kag</div>
+        <div class="h4">Sonam Kag</div>
+        <div class="h5">Sonam Kag</div> -->
+
+
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <img src="sonam.png" alt="Avatar">
+
+            </div>
+
+            <div class="rightSection">
+                Hi, My name is Sonam
+                <div>and I am a Software Developer.</div>
+
+
+                <div class="w3-container w3-light-grey w3-cell">
+                    <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+                    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
+                    <p><i class="fa fa-envelope fa-fw w3-hover-opacity"></i></p>
+                    <p><i class="fa fa-youtube-play w3-hover-opacity"></i></p>
+                    <p><i class="fa fa-github w3-hover-opacity"></i></p>
+                    <p><i class="fa fa-linkedin w3-hover-opacity"></i></p>
+                  </div>
+
+                <div class="roundedButton">
+                    <a href="projects.html" class="roundlink button1">
+                        <span class="spanclass">Projects</span>
+                    </a>
+
+                    <a href="about.html" class="roundlink button2">
+                        <span class="spanclass">About</span>
+                    </a>
+
+                    <a href="SonamKagCV.pdf" class="roundlink button3">
+                        <span class="spanclass">Resume</span>
+                    </a>
+
+                    <a href="personal.html" class="roundlink button4">
+                        <span class="spanclass">Personal</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="fixed-bottom">
+        <div class="container mt-0">
+            &copy; Copyright 2023 Sonam Kag.
+            Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+
+            Last updated: June 15, 2023.
+
+            <!-- <img src='http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==' height='20' border='0' alt='Visitor Counter'> -->
+            <!-- Page hits: ![page hit counter](http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==) -->
+        </div>
+    </footer>
 </body>
+
 </html>
