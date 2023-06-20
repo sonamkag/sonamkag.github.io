@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonam Kag | Computer Science</title>
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
-    <link rel="shortcut icon" type="image/x-icon"
-        href="https://images.squarespace-cdn.com/content/v1/52ca8cc6e4b0cd506530c291/1389006107647-B7X9IS24VR1JB8AA0URI/favicon.ico" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -106,6 +105,10 @@
             width: 50%;
         }
 
+        .highlightColor {
+            color: cornflowerblue;
+        }
+
         .leftSection img {
             height: 480px;
             /* width: 400px; */
@@ -124,13 +127,11 @@
             margin: 4px 2px;
         }
 
-        
-
-        .roundlink{
+        .roundlink {
             position: relative;
-      	    width: 100px;
-      	    height: 100px;
-		    border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
             border: 1px solid;
             display: inline-block;
             padding: 20px;
@@ -142,41 +143,104 @@
             background-color: #bada55;
         }
 
+        .button1:hover {
+            background-color: white;
+        }
+
         .button2 {
             background-color: #eea302;
+        }
+
+        .button2:hover {
+            background-color: white;
         }
 
         .button3 {
             background-color: #80d8da;
         }
 
+        .button3:hover {
+            background-color: white;
+        }
+
         .button4 {
             background-color: #c7c7c7;
         }
 
-        .spanclass{
+        .button4:hover {
+            background-color: white;
+        }
+
+        .spanclass {
             font-family: Open Sans;
             font-weight: bold;
             font-size: 1.5rem;
             color: black;
             margin: 0;
-  		    position: absolute;
-  		    top: 50%;
+            position: absolute;
+            top: 50%;
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
 
-        .fa-youtube-play{
+        .iconsLink {
+            width: 125px;
+            color: #000 !important;
+            background-color: #f1f1f1 !important;
+            padding: 0.01em 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fa-youtube-play {
             color: #e84118;
         }
 
-        .fa-github{
+        .fa-github {
             color: black;
         }
 
-        .fa-linkedin{
+        .fa-linkedin {
             color: #007bb5;
+        }
+
+        .headerlink {
+            text-decoration: none;
+        }
+
+        .headerlink:hover {
+            color: grey;
+        }
+
+        .onAlink {
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        .logo {
+
+            margin: 10px;
+            height: 120px;
+            width: 120px;
+        }
+
+        .footer {
+            padding-top: 9px;
+            padding-bottom: 8px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.75rem;
+            color: #c2c2c2;
+            background-color: #424242;
+            text-align: center;
+        }
+
+        .footerhighlight{
+            color: white;
         }
     </style>
 </head>
@@ -184,13 +248,16 @@
 <body>
     <header>
         <nav>
-            <div class="left"> Sonam Kag</div>
+            <div class="left">
+                <span><img src="logo.png" class="logo"></span>
+                Sonam Kag
+            </div>
             <div class="right">
                 <ul>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Resume</li>
-                    <li>Personal</li>
+                    <li><a href="/projects.html" class="headerlink">Projects</a></li>
+                    <li><a href="/about.html" class="headerlink">About</a></li>
+                    <li><a href="/SonamKagCV.pdf" class="headerlink">Resume</a></li>
+                    <li><a href="/personal.html" class="headerlink">Personal</a></li>
                 </ul>
             </div>
         </nav>
@@ -212,18 +279,30 @@
             </div>
 
             <div class="rightSection">
-                Hi, My name is Sonam
-                <div>and I am a Software Developer.</div>
+                Hi, My name is <span class="highlightColor">Sonam</span> Kag.
+                <div>And I am a Software Developer.</div>
 
 
-                <div class="w3-container w3-light-grey w3-cell">
+                <div class="iconsLink">
                     <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
                     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
-                    <p><i class="fa fa-envelope fa-fw w3-hover-opacity"></i></p>
-                    <p><i class="fa fa-youtube-play w3-hover-opacity"></i></p>
-                    <p><i class="fa fa-github w3-hover-opacity"></i></p>
-                    <p><i class="fa fa-linkedin w3-hover-opacity"></i></p>
-                  </div>
+                    <div class="w3-cell link">
+                        <p><a href="mailto:sonamkag@gmail.com" class="onAlink">
+                                <i class="fa fa-envelope fa-fw w3-hover-opacity"></i></a></p>
+                    </div>
+                    <div class="w3-cell link">
+                        <p><a href="https://www.youtube.com/@sonamkag5107" class="onAlink">
+                                <i class="fa fa-youtube-play w3-hover-opacity"></i></a></p>
+                    </div>
+                    <div class="w3-cell link">
+                        <p><a href="https://github.com/sonamkag" class="onAlink">
+                                <i class="fa fa-github w3-hover-opacity"></i></a></p>
+                    </div>
+                    <div class="w3-cell link">
+                        <p><a href="https://www.linkedin.com/in/sonam-kag-047562107/" class="onAlink">
+                                <i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
+                    </div>
+                </div>
 
                 <div class="roundedButton">
                     <a href="projects.html" class="roundlink button1">
@@ -255,19 +334,17 @@
 
 
     <!-- Footer -->
-
-    <footer class="fixed-bottom">
-        <div class="container mt-0">
-            &copy; Copyright 2023 Sonam Kag.
-            Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    <div class="footer">
+        &copy; Copyright 2023 Sonam Kag.
+        Hosted by <a href="https://pages.github.com/" target="https://pages.github.com/" class="footerhighlight" style="text-decoration: none;">GitHub Pages</a>.
 
 
-            Last updated: June 15, 2023.
+        Last updated: June 15, 2023.
 
-            <!-- <img src='http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==' height='20' border='0' alt='Visitor Counter'> -->
-            <!-- Page hits: ![page hit counter](http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==) -->
-        </div>
-    </footer>
+        <!-- <img src='http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==' height='20' border='0' alt='Visitor Counter'> -->
+        <!-- Page hits: ![page hit counter](http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==) -->
+    </div>
+
 </body>
 
 </html>
