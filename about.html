@@ -1,12 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Gluten:wght@200&family=Merienda:wght@300&family=Open+Sans&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            color: black;
+        }
+
+        /* HEADER */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: #9e9e9e22;
+        }
+
+        .left {
+            font-family: Shantell Sans;
+            font-size: 2rem;
+        }
+
+        .logo {
+            margin: 10px;
+            height: 120px;
+            width: 120px;
+        }
+
+        .right {
+            font-family: Merienda;
+            font-size: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 9px;
+
+        }
+
+        .headerlink {
+            text-decoration: none;
+        }
+
+        .headerlink:hover {
+            color: grey;
+        }
+
+
+
+        /* MAIN SECTION */
+        .aboutme {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+        }
+
+        .image1 {
+            width: 350px;
+            height: 435px;
+        }
+
+        .intro {
+            /* background-color: red; */
+            font-family: Open Sans;
+            font-size: 1rem;
+            width: 50%;
+        }
+
+        .span-highlight {
+            color: #416bd8;
+        }
+
+
+        .my-experience {
+            margin-top: 58px;
+            padding-bottom: 0px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #dadada;
+        }
+
+        .my-experience._58 {
+            margin-top: 0px;
+        }
+
+
+        .container-main {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .container-main.flex-about {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .w-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 940px
+        }
+
+        .div-block-115 {
+            display: flex;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .experience-box {
+            margin-top: 60px;
+        }
+
+        .experience-box._0topmargin {
+            margin-top: 0px;
+        }
+
+        .heading-3 {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-family: 'Open Sans', sans-serif;
+            color: #343434;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .experience-items {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .experience-items.bar {
+            width: 850px;
+            height: 2px;
+            background-color: #676767;
+        }
+
+        .experience-text {
+            margin-top: 0px;
+            letter-spacing: 0.025em;
+            padding-right: 15px;
+        }
+
+        .experience-text.smaller {
+            display: inline-block;
+            margin-top: 8px;
+            font-family: Lato, sans-serif;
+            color: #676767;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .experience-text.top10 {
+            margin-top: 0px;
+            white-space: nowrap;
+        }
+
+        .italic-text {
+            font-style: normal;
+        }
+
+        .div-block-126 {
+            margin-top: 20px;
+        }
+
+        /*FOOTER*/
+        .footer {
+            padding-top: 9px;
+            padding-bottom: 8px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.75rem;
+            color: #c2c2c2;
+            background-color: #424242;
+            text-align: center;
+        }
+
+        .footerhighlight {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    This is the About section page.
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="left">
+                <span><a href="/index.html"><img src="logo.png" class="logo"></a></span>
+                <a href="/index.html" style="text-decoration: none;">Sonam Kag</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/projects.html" class="headerlink">Projects</a></li>
+                    <li><a href="/about.html" class="headerlink">About</a></li>
+                    <li><a href="/SonamKagCV.pdf" class="headerlink">Resume</a></li>
+                    <li><a href="/personal.html" class="headerlink">Personal</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main body -->
+    <main>
+        <div class="aboutme">
+            <div class="left">
+                <img src="/mcDonald's.jpg" class="image1">
+
+            </div>
+
+
+            <div class="intro">
+                <p class="self-intro">My name is Sonam Kag. I am a Software Developer with a background in data science,
+                    machine learning, andriod and web development. I enjoy implementing my ideas by making creative
+                    websites and apps
+                    using my knowledge and expertise, such as <span class="span-highlight">Musix</span> and
+                    <span class="span-highlight">Recommendation-engine</span> and much more. <span
+                        class="span-highlight">I am currently
+                        looking for jobs that suits me well and where I can contribute, learn and grow within the
+                        company.</span><br>
+
+                    <!-- I can contribute, learn and grow my knowledge span further while helping the company to built a good asset. -->
+                </p>
+
+                <br>
+                <p class="self-intro">I graduated with <span class="span-highlight">B.Tech in computer science
+                        engineering from IIT Mandi </span>in 2019. I secured 2nd position in data science hackathon
+                    conducted by Internshala in 2019.
+                    <!-- I am excited about <span class="span-highlight">XR technology and its
+                        application</span>. My research was focused on XR wearable devices and multi-modal
+                    interactions at <span class="span-highlight">Carnegie Mellon University</span>, where I obtained
+                    a Master's degree in Interaction Design in 2022. -->
+
+                </p>
+                <br>
+                <p class="self-intro _0btmmargin">When I am not coding, I enjoy gardening, skincare, cooking,
+                    and listening to music.<br>‍<span class="span-big">🌱🧴👩‍🍳🎵</span><br></p>
+            </div>
+        </div>
+
+        <div class="my-experience _58 wf-section">
+            <div class="container-main flex-about w-container">
+                <div class="div-block-115">
+                    <div class="experience-box _0topmargin">
+                        <h2 class="heading-3">Education</h2>
+                        <div class="experience-items bar"></div>
+                        <div>
+                            <div class="experience-items">
+                                <div class="experience-text top10">B.Tech in CSE</div><a
+                                    href="#https://design.cmu.edu/" target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">Indian Institute Of Technology, Mandi</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">Aug 2015 - June 2019</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">B. in Industrial Design</div><a
+                                    href="#https://www.yuntech.edu.tw/" target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">National Yunlin University of Sci and Tech
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">Sep 2008 - May 2012</div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <h2 class="heading-3">Experience</h2>
+                        <div class="experience-items bar"></div>
+                        <div>
+                            <div class="experience-items">
+                                <div class="experience-text top10">Product Designer</div><a
+                                    href="https://www.tiktok.com/" target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">TikTok, Los Angeles</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">July 2022 - Now</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Design Researcher</div><a
+                                    href="https://embodiedcomputations.org/" target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">[EM]BODIED COMPUTATIONS LAB</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">Aug 2021 - Dec 2021</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Hardware Product Designer</div><a href="#www.hp.com"
+                                    target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">HP inc. Taiwan Design Center</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">June 2014 - Feb 2021</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Product Designer</div><a
+                                    href="#https://www.movial.com/" target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">Movial Taiwan</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">March 2014 - Feb 2021</div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <h2 class="heading-3">Honors</h2>
+                        <div class="experience-items bar"></div>
+                        <div>
+                            <div class="experience-items">
+                                <div class="experience-text top10"><strong>Patent - Wood Panel Assemblies for
+                                        PalmRest and Trackpad</strong></div><a
+                                    href="https://patents.justia.com/patent/20220137671" target="_blank"
+                                    class="w-inline-block">
+                                    <div class="experience-text smaller">US Patent and Trademark Office</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">2019(Filed)/ 2022 (Published)</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Gold Award</div><a
+                                    href="https://ifdesign.com/en/winner-ranking/project/hp-envy-13/283287"
+                                    target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">iF World Design Guide</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">2020</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Innovation Awards Honoree</div><a
+                                    href="#https://www.ces.tech/Innovation-Awards/Honorees/2020/Honorees/H/HP-Envy-13.aspx"
+                                    target="_blank" class="w-inline-block">
+                                    <div class="experience-text smaller">Consumer Electronics Show</div>
+                                </a>
+                            </div>
+                            <div class="experience-text smaller">2020</div>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <h2 class="heading-3">Certifications</h2>
+                        <div class="experience-items bar"></div>
+                        <div>
+                            <div class="experience-items">
+                                <div class="experience-text top10">Decentralized Finance (DeFi)</div>
+                                <div class="experience-text smaller"><em class="italic-text">Duke University</em>
+                                </div>
+                            </div>
+                            <div class="experience-text smaller">2022</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">The Future of Payment Technologies</div>
+                                <div class="experience-text smaller"><em class="italic-text-2">University of
+                                        Michigan</em></div>
+                            </div>
+                            <div class="experience-text smaller">2022</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Blockchain and Cryptocurrency</div>
+                                <div class="experience-text smaller"><em class="italic-text-2">University of
+                                        Michigan</em></div>
+                            </div>
+                            <div class="experience-text smaller">2022</div>
+                        </div>
+                        <div class="div-block-126">
+                            <div class="experience-items">
+                                <div class="experience-text top10">Responsive Web Design Certificate</div>
+                                <div class="experience-text smaller"><em class="italic-text-2">freeCodeCamp</em>
+                                </div>
+                            </div>
+                            <div class="experience-text smaller">2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; Copyright 2023 Sonam Kag.
+        Hosted by <a href="https://pages.github.com/" target="https://pages.github.com/" class="footerhighlight"
+            style="text-decoration: none;">GitHub Pages</a>.
+
+
+        Last updated: June 15, 2023.
+
+        <!-- <img src='http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==' height='20' border='0' alt='Visitor Counter'> -->
+        <!-- Page hits: ![page hit counter](http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==) -->
+    </div>
 </body>
+
 </html>

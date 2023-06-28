@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Gluten:wght@200&family=Merienda:wght@300&family=Open+Sans&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            color: black;
+        }
+
+        /* HEADER */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: #9e9e9e22;
+        }
+
+        .left {
+            font-family: Shantell Sans;
+            font-size: 2rem;
+        }
+
+        .logo {
+            margin: 10px;
+            height: 120px;
+            width: 120px;
+        }
+
+        .right {
+            font-family: Merienda;
+            font-size: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 9px;
+
+        }
+
+        .headerlink {
+            text-decoration: none;
+        }
+
+        .headerlink:hover {
+            color: grey;
+        }
+
+        
+        /* MAIN SECTION */
+        h2 {
+            display: block;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .heading-133 {
+            line-height: 1.2;
+            box-sizing: border-box;
+            padding-bottom: clamp(1rem, 6%, 3rem);
+            text-align: center;
+            letter-spacing: -2px;
+        }
+
+        .span21 {
+            font-size: 12rem;
+            font-family: 'Merienda';
+            font-weight: 700;
+            position: relative;
+            z-index: 10;
+        }
+
+        /*FOOTER*/
+        .footer {
+            padding-top: 9px;
+            padding-bottom: 8px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.75rem;
+            color: #c2c2c2;
+            background-color: #424242;
+            text-align: center;
+        }
+
+        .footerhighlight {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>This is the Personal section page.</h2>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="left">
+                <span><a href="/index.html"><img src="logo.png" class="logo"></a></span>
+                <a href="/index.html" style="text-decoration: none;">Sonam Kag</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/projects.html" class="headerlink">Projects</a></li>
+                    <li><a href="/about.html" class="headerlink">About</a></li>
+                    <li><a href="/SonamKagCV.pdf" class="headerlink">Resume</a></li>
+                    <li><a href="/personal.html" class="headerlink">Personal</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main body -->
+    <main>
+        <h2 class="heading-133 span21"><span class="span21">In Progress.</span></h2>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; Copyright 2023 Sonam Kag.
+        Hosted by <a href="https://pages.github.com/" target="https://pages.github.com/" class="footerhighlight"
+            style="text-decoration: none;">GitHub Pages</a>.
+
+
+        Last updated: June 15, 2023.
+
+        <!-- <img src='http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==' height='20' border='0' alt='Visitor Counter'> -->
+        <!-- Page hits: ![page hit counter](http://www.hit-counts.com/counter.php?t=MTQyMjYyMg==) -->
+    </div>
 </body>
+
 </html>
